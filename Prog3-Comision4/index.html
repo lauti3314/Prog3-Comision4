@@ -20,126 +20,127 @@
 </head>
 
 <body>
+    <header>
+        <h1>Primer HTML</h1>
+    </header>
+    <main>
+        
+        <!-- Sección de encabezados y propiedades del texto -->
+        <section id="encabezados">
+            <h2>Encabezados y propiedades del texto</h2>
+            <p style="font-style: italic;">Este es un texto en cursiva</p>
+            <p style="font-weight: bold;">Este es un texto en negrita</p>
+            <p style="text-decoration: underline;">Este es un texto subrayado</p>
+        </section>
 
-    <h1>Primer HTML</h1>
-    <div id="encabezados">
-        <h2>Encabezados y propiedades del texto</h2>
-        <p style="font-style: italic;">Este es un texto en cursiva</p>
-        <p style="font-weight: bold;">Este es un texto en negrita</p>
-        <p style="text-decoration: underline;">Este es un texto subrayado</p>
-    </div>
+        <!-- Sección de agrupación de contenido -->
+        <section id="agrupacion-contenido">
+            <h2>División y agrupación de contenido</h2>
 
+            <article>
+                <h3>Sección 1</h3>
+                <p>Contenido de la primera sección agrupada en un artículo.</p>
+            </article>
 
-    <div id="agrupacion de contenido">
-        <h2>Division y agrupacion de contenido</h2>
+            <article>
+                <h3>Sección 2</h3>
+                <p>Contenido de la segunda sección agrupada en otro artículo.</p>
+            </article>
+        </section>
 
-        <div>
-            <h3>Seccion 1</h3>
-            <p>Contenido de la primera seccion agrupada en un div.</p>
-        </div>
+        <!-- Sección de enlaces y listas -->
+        <section>
+            <h2>Enlaces y listas</h2>
 
-        <div>
-            <h3>Seccion 2</h3>
-            <p>Contenido de la segunda seccion agrupada en otro div.</p>
-        </div>
-    </div>
+            <nav>
+                <p>Visita <a href="https://www.youtube.com" target="_blank">YouTube</a> haciendo clic en el enlace.</p>
+            </nav>
 
-    <div>
-        <h2>Enlaces y listas</h2>
-        <nav>
-            <p>Visita <a href="https://www.youtube.com" target="_blank">youtube</a> haciendo click en el enlace.</p>
-        </nav>
+            <h4>Lista ordenada:</h4>
+            <ol>
+                <li>Primer ítem de una lista ordenada</li>
+                <li>Segundo ítem de una lista ordenada</li>
+            </ol>
 
-        <h4>Lista ordenada:</h4>
-        <ol>
-            <li>Primer item de una lista ordenada</li>
-            <li>Segundo item de una lista ordenada</li>
-        </ol>
-
-        <h4>Lista desordenada:</h4>
-        <ul>
-            <li>Primer item de una lista desordenada</li>
-            <li>Segundo item de una lista desordenada</li>
-        </ul>
-
-        <h4>Enlaces internos</h4>
-        <nav>
+            <h4>Lista desordenada:</h4>
             <ul>
-                <li> <a href="#multimedia">Ir a multimedia</a> </li>
-                <li> <a href="#agrupacion de contenido">Ir a tipos de agrupacion de Contenido</a> </li>
-                <li> <a href="#encabezados">Ir a encabezados</a> </li>
-                <li> <a href="#tablas">Ir a tablas</a> </li>
-                <li> <a href="#formulario">Ir a formulario</a> </li>
+                <li>Primer ítem de una lista desordenada</li>
+                <li>Segundo ítem de una lista desordenada</li>
             </ul>
 
-        </nav>
-    </div>
+            <h4>Enlaces internos</h4>
+            <nav>
+                <ul>
+                    <li><a href="#multimedia">Ir a multimedia</a></li>
+                    <li><a href="#agrupacion-contenido">Ir a tipos de agrupación de contenido</a></li>
+                    <li><a href="#encabezados">Ir a encabezados</a></li>
+                    <li><a href="#tablas">Ir a tablas</a></li>
+                    <li><a href="#formulario">Ir a formulario</a></li>
+                </ul>
+            </nav>
+        </section>
 
-    <div id="multimedia">
-        <h2>Elementos multimedia</h2>
+        <!-- Sección de elementos multimedia -->
+        <section id="multimedia">
+            <h2>Elementos multimedia</h2>
+            <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
+            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg"
+                alt="Imagen de prueba" width="200px" height="200px">
+            <video
+                src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+                width="300px" autoplay controls></video>
+        </section>
 
-        <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg" controls></audio>
-        <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg"
-            alt="Imagen de prueba" width="200px" height="200px">
-        <video
-            src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
-            width="300px" autoplay controls></video>
+        <!-- Sección de tablas -->
+        <section id="tablas">
+            <h2>Tablas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    </div>
+        <!-- Sección de formularios -->
+        <section id="formulario">
+            <h2>Formularios</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ejemplo: José">
+                </div>
 
-    <div id="tablas">
-        <h2>Tablas</h2>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="ejemplo@gmail.com">
+                </div>
 
-        <table>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" placeholder="Ingrese algún mensaje"></textarea>
+                </div>
 
-            <thead>
-                <tr>
-                    <th>Columna 1</th>
-                    <th>Columna 2</th>
-                </tr>
-            </thead>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
 
-            <tbody>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                </tr>
 
-                <tr>
-                    <td>Dato 3</td>
-                    <td>Dato 4</td>
-                </tr>
-            </tbody>
-
-        </table>
-
-    </div>
-
-    <div id="formulario">
-        <h2>Formularios</h2>
-
-        <form>
-
-            <div>
-                <label>Nombre</label>
-                <input type="text" placeholder="Ejemplo Jose">
-            </div>
-
-            <div>
-                <label>Email</label>
-                <input type="email" placeholder="ejemplo@gmail.com">
-            </div>
-
-            <div>
-                <label>Mensaje</label>
-                <textarea placeholder="Ingrese algun mensaje"></textarea>
-            </div>
-
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
-        </form>
-    </div>
 </body>
 
 </html>
