@@ -1,0 +1,23 @@
+/*4.1 Cabecera de nuestra pagina */
+.cabecera-de-pagina{
+    width: 100%;
+    margin: 0%;
+    padding: 2px;
+    background-color: green;
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+}
+ .cabecera-de-pagina p{
+    font-size: 30px;
+ }
+ .cabecera-de-pagina blockquote{
+    font-size: 17px;
+    font-style: inherit;
+ }
+
+ /*4.2 Propiedades de texto */
+
+ 
