@@ -5,12 +5,63 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS App</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <body>
     <main>
       <section>
         <h1>Mi primer archivo de JS</h1>
+      </section>
+
+      <section id="section">
+
+        <div id="colorParrafo">
+         <p >Este es el primer párrafo</p>
+         <p >Este es el segundo párrafo</p>
+         <p >Este es el tercer párrafo</p>
+        </div>
+
+        <button id="buttonColor">Cambiar color</button>
+      </section>
+
+      <section id="section">
+        <form action="" id="form">
+          <label for="nombre">Ingresa un texto</label>
+          <input type="text" id="nombreInput">
+
+          <button type="button" id="alertaButton">Mostrar Alerta</button>
+        </form>
+      </section>
+
+      <section>
+
+        <ul id="list" class="resaltado">
+          <li class="li">Elemento 1</li>
+          <li class="li">Elemento 2</li>
+          <li class="li">Elemento 3</li>
+          <li class="li">Elemento 4</li>
+        </ul>
+
+      </section>
+
+      <section>
+        
+        <input class="input" type="text" id="miCampoTexto" placeholder="Ingresa un texto">
+        <button id="desactivarBoton">Deshabilitar Campo</button>
+        <button id="habilitarBoton">Habilitar Campo</button>
+
+      </section>
+
+      <section>
+        <h3>LocalStorage</h3>
+      <div>
+        <label>Correo Email:</label>
+        <input type="email" id="mail">
+        <button id="saveButton">Guardar Correo</button>
+        <button id="deleteButton">Borrar Correo</button>
+        <div id="saveEmail"></div>
+      </div>
       </section>
     </main>
     <div id="app"></div>
