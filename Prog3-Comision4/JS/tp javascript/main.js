@@ -279,7 +279,7 @@ const getDataInput = () => {
     const emailInput = document.getElementById("mail").value;
     localStorage.setItem("emails", JSON.stringify({emailInput}))
     if(emailInput) {
-        saveEmail.innerHTML = <p>Correo guardado: ${emailInput}</p>
+        saveEmail.innerHTML = `<p>Correo guardado: ${emailInput}</p>`
     }
 }
 
