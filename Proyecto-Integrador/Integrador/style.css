@@ -1,0 +1,87 @@
+/*======GENERALES======*/
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik", sans-serif;
+}
+
+/*======HEADER======*/
+.container__principalHeader {
+	width: 100vw;
+	height: 8vh;
+	background-color: rgb(169, 54, 54);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.container__contentHeader {
+	width: 65%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0.4rem;
+}
+
+.headerSearch {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1vh;
+}
+
+.inputHeader {
+	border-radius: 0.4rem;
+	border: none;
+	padding: 0.4rem;
+	outline: none;
+	height: vh;
+	width: 15vw;
+	font-size: 1.9vh;
+}
+
+.buttonSearch {
+	border: 1px solid white;
+	background-color: transparent;
+	border-radius: 0.4rem;
+	padding: 0.1rem;
+	width: 6vw;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	transition: 0.2s ease;
+}
+.buttonSearch:hover,
+.header__buttonAdd:hover {
+	cursor: pointer;
+	background-color: rgb(215, 88, 88);
+}
+
+.header__buttonAdd {
+	width: 13vw;
+	border-radius: 0.4rem;
+	padding: 0.1rem;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*======MAIN======*/
+
+.container__view {
+	display: grid;
+	grid-template-columns: 0.2fr 0.8fr;
+}
+
+.listAside {
+	background-color: aquamarine;
+	height: 92vh;
+}
+
+.store{
+    background-color: blueviolet;
+    height: 92vh;
+}
