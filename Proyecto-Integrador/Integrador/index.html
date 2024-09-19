@@ -36,7 +36,7 @@
 						</button>
 					</div>
 					<div>
-						<button class="header__buttonAdd">
+						<button class="header__buttonAdd" id="buttonAddElement">
 							Agregar Elemento
 							<span class="material-symbols-outlined"> library_add </span>
 						</button>
@@ -58,6 +58,32 @@
 				</aside>
 
 				<div class="store"></div>
+			</div>
+
+			<!-- POPUP -->
+			<div class="popUpContainer_principal" id="modalPopUP">
+				<div class="popUpContainer">
+					<div class="containerTitlePopup">
+						<h1>Agregar o modificar un producto</h1>
+					</div>
+					<div class="containerInputs_popUP">
+						<input placeholder="Ingrese un nombre" id="nombre" type="text" />
+						<input placeholder="Ingrese una imagen" id="img" type="text">
+						<input placeholder="precio" type="number" value="0" id="precio" />
+						
+						<select id="categoria">
+							<option>Seleccione una categoria</option>
+							<option>Gaseosas</option>
+							<option>Hamburguesas</option>
+							<option>Papas</option>
+						</select>
+					</div>
+					<div class="containerButtonsPopUP">
+						<button class="buttonPopUp cancel" id="cancelButton">Cancelar</button>
+						<button class="buttonPopUp accept" id="acceptButton">Aceptar</button>
+						<button class="buttonPopUp delete" id="deleteButton">Eliminar</button>
+					</div>
+				</div>
 			</div>
 		</main>
 		<script type="module" src="/main.js"></script>
