@@ -1,5 +1,17 @@
+import { setInLocalStorage } from "./src/persistence/localStorage.js";
 import { renderCategories } from "./src/services/categories.js";
+import { handleGetProductsToStore } from "./src/views/store.js";
+import "./style.css";
 
+/* APLICACION */
+
+export let categoriaActiva = null;
+
+export const setCategoriaActiva = (categoriaIn) => {
+	categoriaActiva = categoriaIn;
+};
+
+handleGetProductsToStore();
 renderCategories();
 
 /* PRODUCT */
@@ -45,4 +57,16 @@ const handleSaveOrModifyElements = () => {
 	const precio = document.getElementById("precio").value;
 	const categories = document.getElementById("categoria").value;
 
+	let object = {
+		id: new Date().toISOString(),
+		nombre,
+		imagen,
+		precio,
+		categories,
+	};
+
+	setInLocalStorage(object);
+
+	handleGetProductsToStore();
+	closeModal();
 };

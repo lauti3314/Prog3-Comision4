@@ -80,9 +80,71 @@
 	height: 92vh;
 }
 
+/*======STORE======*/
 .store {
-	background-color: blueviolet;
-	height: 92vh;
+	background-color: #eeee;
+	max-height: 92vh;
+	overflow-y: auto; /* controla el comportamiento del desbordamiento de contenido vertical (eje Y) en un elemento. */
+	width: 100%;
+}
+.sectionStore {
+	background-color: white;
+	margin: 1rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.containerTitleSection {
+	margin: 1rem;
+	font-size: 3vh;
+	border-bottom: 1px solid grey;
+}
+
+.containerProductStore {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 0.6fr);
+	gap: 2vh;
+}
+
+.containerTargetItem {
+	width: 20vw;
+	height: 35vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0.4rem;
+	border: 1px solid #000;
+	box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 0.4rem;
+	transition: 0.2s ease;
+}
+.containerTargetItem:hover {
+	cursor: pointer;
+	transform: scale(1.08);
+}
+
+.containerTargetItem h2 {
+	font-size: 2vh;
+	text-align: center;
+}
+
+.targetProps p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.sectionStore img {
+	width: 100%;
+	border-radius: 0.4rem;
+	box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.3);
 }
 
 /*======LISTASIDE======*/
@@ -116,6 +178,11 @@
 	padding: 0.4rem;
 	border-radius: 0.4rem;
 }
+.listAside ul li:hover {
+	cursor: pointer;
+	background-color: rgb(169, 54, 54);
+	color: white;
+}
 
 .liActive {
 	background-color: rgb(169, 54, 54);
@@ -145,7 +212,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	
 }
 
 .containerTitlePopup {
@@ -161,20 +227,20 @@
 	gap: 2vh;
 }
 .containerInputs_popUP input,
-.containerInputs_popUP select{
+.containerInputs_popUP select {
 	width: 60%;
 	border: 1px solid gray;
 	pad: 0.4rem;
 	border-radius: 0.4rem;
 }
 
-.containerButtonsPopUP{
+.containerButtonsPopUP {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 }
 
-.buttonPopUp{
+.buttonPopUp {
 	padding: 0.6rem;
 	border: none;
 	border-radius: 0.4rem;
@@ -184,9 +250,9 @@
 .cancel {
 	background-color: rgb(243, 243, 35);
 }
-.accept{
+.accept {
 	background-color: rgb(34, 218, 34);
 }
-.delete{
+.delete {
 	background-color: rgb(236, 45, 45);
 }
