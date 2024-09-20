@@ -1,10 +1,10 @@
 /* POPUP */
 import { setproductoActivo, productoActivo } from "../../main";
+import { handleDeleteProduct } from "../services/products";
 
 const cancelButton = document.getElementById("cancelButton");
 cancelButton.addEventListener("click", () => {
-	handleCancelButton();
-    closeModal();
+	closeModal();
 });
 
 //Funciones abrir o cerrar modal
@@ -12,6 +12,13 @@ cancelButton.addEventListener("click", () => {
 export const openModal = () => {
 	const modal = document.getElementById("modalPopUP");
 	modal.style.display = "flex";
+	const buttonDelete = document.getElementById("deleteButton")
+
+	if (productoActivo) {
+		buttonDelete.style.display = "block";
+	}else{
+		buttonDelete.style.display = "none";
+	}
 
 	if (productoActivo) {
 		const nombre = document.getElementById("nombre");
@@ -42,3 +49,11 @@ const resetModal = () => {
 	imagen.value = "";
 	precio.value = 0;
 };
+
+const deleteButton = document.getElementById("deleteButton");
+deleteButton.addEventListener("click", ()=>{
+    buttonDelete();
+});
+const buttonDelete = ()=>{
+    handleDeleteProduct();
+}
