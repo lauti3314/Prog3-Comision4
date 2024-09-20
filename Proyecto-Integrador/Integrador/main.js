@@ -1,4 +1,5 @@
 import { renderCategories } from "./src/services/categories.js";
+import { handleSearchProductByName } from "./src/services/searchBar.js";
 import { openModal } from "./src/views/modal.js";
 import { handleGetProductsToStore } from "./src/views/store.js";
 import "./style.css";
@@ -18,10 +19,16 @@ export const setproductoActivo = (productoIn) => {
 handleGetProductsToStore();
 renderCategories();
 
-
 //HEADER
 
 const buttonAdd = document.getElementById("buttonAddElement");
 buttonAdd.addEventListener("click", () => {
 	openModal();
+});
+
+//ButtonSearch
+
+const buttonSearch = document.getElementById("buttonSearch");
+buttonSearch.addEventListener("click", () => {
+	handleSearchProductByName();
 });
