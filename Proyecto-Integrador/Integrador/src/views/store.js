@@ -1,4 +1,6 @@
-import { handleGetProductLocalStorage } from "../persistence/localStorage.js";
+import { setproductoActivo } from "../../main";
+import { handleGetProductLocalStorage } from "../persistence/localStorage";
+import { openModal } from "./modal";
 
 export const handleGetProductsToStore = () => {
 	const products = handleGetProductLocalStorage();
@@ -55,9 +57,9 @@ export const handleRenderList = (productosIn) => {
 				const productContianer = document.getElementById(
 					`product-${productosIn.categories}-${index}`
 				);
-
 				productContianer.addEventListener("click", () => {
-					console.log("productoActivo", element);
+					setproductoActivo(element);
+					openModal();
 				});
 			});
 		}
