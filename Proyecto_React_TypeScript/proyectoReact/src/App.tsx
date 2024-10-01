@@ -1,3 +1,4 @@
+import { ComponentCounter } from "./components/ComponentCounter/ComponentCounter";
 import { MiPrimerComponent } from "./components/MiPrimerComponent/MiPrimerComponent";
 
 export const App = () => {
@@ -8,6 +9,8 @@ export const App = () => {
 				color="red"
 				fontSize={3}
 			/>
+
+            <ComponentCounter/>
 		</div>
 	);
 };
