@@ -12,12 +12,15 @@ interface IPropsGiftList {
 
 export const GiftList: FC<IPropsGiftList> = ({ gift }) => {
 	return (
-		<div>
-			{
-                gift.map((el)=>(
-                    <CardGift gift={el} />
-                ))
-            }
+		<div
+			style={{
+				display: "grid",
+				gridTemplateColumns: "repeat(3, .6fr)",
+				gap: "2vh",
+			}}>
+			{gift.map((el, i) => (
+				<CardGift gift={el} key={i} />
+			))}
 		</div>
 	);
 };
