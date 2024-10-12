@@ -1,5 +1,11 @@
+import { Login } from "./components/screens/Login/Login";
+
 function App() {
-	return <div>hola</div>;
+	return (
+		<div>
+			<Login />
+		</div> 
+	);
 }
 
 export default App;
