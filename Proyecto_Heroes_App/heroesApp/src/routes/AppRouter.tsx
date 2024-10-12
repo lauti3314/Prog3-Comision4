@@ -1,15 +1,21 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Login } from "../components/screens/Login/Login";
-import { Home } from "../components/screens/Home/Home";
-import { Header } from "../components/ui/Header/Header";
+
+import { useAppSelector } from "../hooks/redux";
+import { ProtectedRoutes } from "./ProtectedRoutes";
 
 export const AppRouter = () => {
+	const isLogged = useAppSelector((state) => state.auth.isLogged);
+
 	return (
 		<>
-			<Header />
 			<Routes>
-				<Route path="/" element={<Login />} />
-				<Route path="/home" element={<Home />} />
+				{isLogged ? (
+					<Route path="/*" element={<ProtectedRoutes />} />
+				) : (
+					<Route path="/*" element={<Navigate to={"/login"} />} />
+				)}
+				<Route path="/login" element={<Login />} />
 			</Routes>
 		</>
 	);
